@@ -15,3 +15,30 @@ layout: default
 
   {% include disqus.html %}
 </article>
+
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>
+    <script type="text/javascript">
+         // 处理标签，过滤掉空值和无效值
+        var tagsString = '{{ page.tags | jsonify }}';  // 使用 jsonify 过滤器
+        var tags = JSON.parse(tagsString).filter(function(tag) {
+            return tag && tag.trim() !== '' && !tag.includes('/');  // 过滤掉包含斜杠的标签
+        });
+        var gitalk = new Gitalk({
+            clientID: 'Iv23liQ9oiRPBvWLf5YK',
+            clientSecret: '0a323cc1e6c0cd6166932a1587c5e17caedfb47c',
+            repo: 'bloggtalk',
+            owner: 'tangolivesky',
+            admin: ['tangolivesky'],
+            id: md5(location.href.match('/(?<=posts/)(.*)(?=/)/')[1]),
+            title: '{{ page.title }}',                     // 使用文章标题
+            body: '文章链接：' + location.href,             // 文章链接
+            labels: ['Gitalk'].concat(tags),               // 只使用有效的标签
+            language: 'zh-CN',
+            perPage: 10,
+            distractionFreeMode: false // 是否启用无干扰模式
+        });
+        gitalk.render('gitalk-container');
+    </script>
