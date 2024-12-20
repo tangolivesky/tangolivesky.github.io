@@ -1,10 +1,9 @@
 ---
 layout: post
-title: You're up and running!
+title: 第一篇博客
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+还记得10年前是用 BLOG网站写了很多博客，昨天看了一下也没有公开
+现在重新使用github pages来写博客感觉比BLOG网站要好。
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+写博客的目的很明确，一方面可以记录自己的技术/生活相关，另外一方面可以开通google adsence去赚一点零花钱吧
