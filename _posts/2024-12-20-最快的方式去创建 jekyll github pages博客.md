@@ -15,7 +15,7 @@
 
 记得检查一下github的action，看看有没有报错
 
-![]({{site.baseurl}}assets/1734672376409.jpg)
+![]({{site.baseurl}}/assets/1734672376409.jpg)
 
 
 4. 最后就可以访问你的github pages博客了
