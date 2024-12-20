@@ -1,4 +1,3 @@
-## 最快的方式去创建 jekyll github pages博客
 
 
 ### 1. 不需要本地去安装
