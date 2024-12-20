@@ -13,10 +13,9 @@
 
 3. 然后尝试着编辑一些内容，github就会自动去构建发布了
 
-记得看一下github的action
+记得检查一下github的action，看看有没有报错
+
+![]({{site.baseurl}}assets/1734672376409.jpg)
 
 
-![1734672376409.jpg]({{site.baseurl}}/_posts/1734672376409.jpg)
-
-
-
+4. 最后就可以访问你的github pages博客了
