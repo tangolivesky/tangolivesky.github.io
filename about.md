@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+大家好，我是TonyTang，目前是一名前端开发，目前专注于前端开发，但也关注与后端开发
 
-### More Information
+### 更多
 
-A place to include any other types of information that you'd like to include about yourself.
+我在技术领域有着10多年的经验，曾参与过多个项目，涵盖了企业化的信息系统、互联网在线教育项目、医院His项目等等。在我的职业生涯中，我积累了许多前沿技术的实践经验，也解决了不少挑战，这让我不断成长和进步。
+
+写博客的初衷是为了记录自己的学习历程和技术总结，并与大家分享我在工作中遇到的问题与解决方案。无论是“前端开发”或“微服务架构”，还是全栈领域，我都希望通过这片博客与读者互动，互相学习。
+
+此外，我也很乐意与各位同行交流合作，期待能在人生路上一起进步。
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[tangolivesky@163.com](mailto:tangolivesky@163.com)
