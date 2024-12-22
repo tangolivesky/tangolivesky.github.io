@@ -16,19 +16,22 @@ layout: default
   {% include disqus.html %}
 </article>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
 <div id="gitalk-container"></div>
-    <script type="text/javascript">
-        var title = location.pathname.substr(0, 50);//截取路径的前50个字符作为标识符
-        var gitalk = new Gitalk({
-            clientID: 'Iv23liQ9oiRPBvWLf5YK',
-            clientSecret: '0a323cc1e6c0cd6166932a1587c5e17caedfb47c',
-            repo: 'bloggtalk',
-            owner: 'tangolivesky',
-            admin: ['tangolivesky'],
-            id: title
-        });
-        gitalk.render('gitalk-container');
-    </script>
+<script type="text/javascript">
+var title = location.pathname.substr(0, 50);//截取路径的前50个字符作为标识符
+const gitalk = new Gitalk({
+  clientID: 'Iv23liQ9oiRPBvWLf5YK',
+  clientSecret: '0a323cc1e6c0cd6166932a1587c5e17caedfb47c',
+  repo: 'bloggtalk',      // The repository of store comments,
+  owner: 'tangolivesky',
+  admin: ['tangolivesky'],
+  id: title,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
+</script>
+
